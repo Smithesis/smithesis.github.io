@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -18,8 +18,13 @@ header {
     align-items: center;
 }
 
+section {
+    margin: auto;
+    padding: 0 100px;
+}
+
 h1 {
-    font-family: Source Code Pro;
+    font-family: 'Source Code Pro';
     font-size: 50px;
     text-shadow: 5px 5px 10px black, 0 0 1em black, 0 0 0.2em black;
     padding-left: 25px;
@@ -30,7 +35,7 @@ h1 {
 }
 
 #sitenav {
-    font-family: Source Code Pro, Arial, Helvetica, sans-serif;
+    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
     font-size: 25px;
     flex-grow: 1;
 }
@@ -64,10 +69,10 @@ h1 {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #aboutme {
