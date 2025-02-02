@@ -4,75 +4,78 @@
 }
 
 body {
-    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
+    font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: blue;
     height: 100px;
+    color: white;
+    background-color: navy;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-section {
-    margin: auto;
-    padding: 0 100px;
-}
-
 h1 {
-    font-family: 'Source Code Pro';
     font-size: 50px;
-    text-shadow: 5px 5px 10px black, 0 0 1em black, 0 0 0.2em black;
-    padding-left: 25px;
-    color: white;
-    text-align: left;
-    background-color: blue;
-    flex-grow: 2;
-}
-
-#sitenav {
-    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    flex-grow: 1;
+    text-shadow: 5px 5px 5px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 #sitenav ul {
-    color: white;
+    font-size: 25px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
 }
 
-#sitenav ul li {
+#sitenav ul li a {
     color: white;
     padding: 0 10px;
-    margin: 0 5px;
-}
-
-#sitenav a {
-    color: white;
     text-decoration: none;
 }
 
-#sitenav a:hover {
-    color: white;
-    background-color: black;
-    text-decoration: none;
+section {
+    margin: 0 50px;
 }
 
+#welcome {
+    text-align: center;
+}
 
+p {
+    margin: 10px 100px;
+}
 
-main {
+#sociallinks {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex-grow: 1;
     justify-content: center;
+    align-items: center;
+}
+
+#sociallinks ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sociallinks ul li a {
+    padding: 0 10px;
+    color: navy;
+}
+
+#sociallinks ul li a:hover {
+    margin: 10px 0;
+    padding: 0 10px;
+    color: white;
+    background-color: navy;
+    border-radius: 10px;
 }
 
 #aboutme {
@@ -86,35 +89,4 @@ main {
     margin-top: 25px;
     width: 225px;
     border-radius: 50%;
-}
-
-main p {
-    font-family: Source Code Pro, Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin: 30px;
-    display: block;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-#sociallinks {
-    font-family: Source Code Pro, Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#sociallinks ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#sociallinks ul li {
-    padding: 0 10px;
 }
